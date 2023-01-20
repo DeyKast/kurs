@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="section">
+      <div class="container">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a href="./index.html"> Коофіцієнт сортності </a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="./konkurent.html">
+              Коефіцієнт <br />
+              конкурентоспроможності
+            </a>
+          </li>
+          <li class="navigation-list-item current">
+            <a href="./pryb.html">
+              Додатковий прибуток
+              <p class="subtitle">від покращення якості</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <form class="form" action="#" method="#" id="form">
+            <img src="./images/img3.PNG" alt="first" class="image" />
+            <p>
+              Цб, Цн – ціна одиниці продукції до і після поліпшення якості
+              продукції
+            </p>
+            <p>
+              Сб, Сн – собівартість одиниці продукції до і після поліпшення
+              якості продукції
+            </p>
+            <p>
+              Вб, Вн – обсяг випуску продукції до і після поліпшення якості
+              продукції в натуральних одиницях
+            </p>
+
+            <label class="form-label">
+              <span class="form-input-text">Цн = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="Cen"
+                  id="Cen"
+                />
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="form-input-text">Сн = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="Cn"
+                  id="Cn"
+                />
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="form-input-text">Вн = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="Bn"
+                  id="Bn"
+                />
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="form-input-text">Цб = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="Ceb"
+                  id="Ceb"
+                />
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="form-input-text">Сб = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="Cb"
+                  id="Cb"
+                />
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="form-input-text">Вб = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="Bb"
+                  id="Bb"
+                />
+              </span>
+            </label>
+
+            <button type="submit" class="submit-button">Розрахунок</button>
+          </form>
+
+          <div class="answer-wrapper">
+            <h2 class="answer">Відповідь =&nbsp</h2>
+            <div id="ans" class="answer-js"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/pryb.js"></script>
+  </body>
+</html>

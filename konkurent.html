@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="section">
+      <div class="container">
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a href="./index.html"> Коофіцієнт сортності </a>
+          </li>
+          <li class="navigation-list-item current">
+            <a href="./konkurent.html">
+              Коефіцієнт <br />
+              конкурентоспроможності
+            </a>
+          </li>
+          <li class="navigation-list-item">
+            <a href="./pryb.html">
+              Додатковий прибуток
+              <p class="subtitle">від покращення якості</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <form class="form" action="#" method="#" id="form">
+            <img src="./images/img2.PNG" alt="first" class="image" />
+            <p>
+              Інп = загальний показник конкурентоспроможності за нормативними
+              параметрами
+            </p>
+            <p>Ітп = індекс технічних параметрів</p>
+            <p>Іеп = індекс економічних параметрів</p>
+
+            <label class="form-label">
+              <span class="form-input-text">In = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="In"
+                  id="In"
+                />
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="form-input-text">It = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="It"
+                  id="It"
+                />
+              </span>
+            </label>
+
+            <label class="form-label">
+              <span class="form-input-text">Ie = </span>
+              <span class="input-wrapper">
+                <input
+                  type="number"
+                  class="form-input"
+                  required
+                  name="Ie"
+                  id="Ie"
+                />
+              </span>
+            </label>
+
+            <button type="submit" class="submit-button">Розрахунок</button>
+          </form>
+
+          <div class="answer-wrapper">
+            <h2 class="answer">Відповідь =&nbsp</h2>
+            <div id="ans" class="answer-js"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/konkurent.js"></script>
+  </body>
+</html>
